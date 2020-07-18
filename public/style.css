@@ -1,0 +1,287 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+  background-color: rgb(97, 97, 97);
+  color: white;
+  font: "Arial Narrow", sans-serif;
+}
+
+img {
+  width: 25%;
+  height: auto;
+  margin-bottom: 2%;
+  display: block;
+}
+
+.closed {
+  margin-top: 2%;
+}
+
+li {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
+.sonstiges {
+  font: "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 16pt;
+  margin: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="number"] {
+  width: 50%;
+  height: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #dd4a43;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+input[type="submit"] {
+  width: 50%;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #dd4a43;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+input[type="submit"]:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #dd4a43;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  button,
+  img {
+    width: 90%;
+  }
+  input[type="text"],
+  textarea,
+  input[type="number"] {
+    width: 90%;
+  }
+}
+
+div a {
+  font-size: small !important;
+  color: #fff;
+  letter-spacing: 0px;
+}
+
+.Liefergebiet {
+  font-size: medium !important;
+  letter-spacing: -1px !important;
+  color: #dd4a43;
+  font-weight: bold;
+  letter-spacing: 1px !important;
+}
+
+.delete {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #dd4a43;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  width: auto !important;
+  height: auto;
+}
+
+button:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.klein {
+  font: "Arial Narrow", sans-serif;
+  font-size: medium;
+  margin-bottom: 0.25rem;
+}
+
+.space {
+  margin-bottom: 2.5rem;
+  letter-spacing: 0px;
+}
+
+h1 {
+  z-index: 0; /* stack 2nd word below */
+  font: 50px "Arial Narrow", sans-serif; /* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+h1:before {
+  left: -4px;
+  top: -6px;
+  border-top-color: #282828;
+  border-left-color: #282828;
+}
+h1:after {
+  right: -4px;
+  bottom: 4px;
+  border-bottom-color: #282828;
+  border-right-color: #282828;
+}
+
+.gesamt,
+.gesamt-div,
+div {
+  z-index: 0; /* stack 2nd word below */
+  font: 30px "Arial Narrow", sans-serif; /* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.gesamt:before,
+.gesamt-div:before,
+div:before {
+  left: -4px;
+  top: -6px;
+  border-top-color: #282828;
+  border-left-color: #282828;
+}
+.gesamt:after,
+.gesamt-div:after,
+div:after {
+  right: -4px;
+  bottom: 4px;
+  border-bottom-color: #282828;
+  border-right-color: #282828;
+}
+
+.order {
+  margin-bottom: 2rem !important;
+}
+
+.gesamt-div,
+.gesamt {
+  padding-top: 2rem;
+}
+
+.social-container {
+  width: auto !important;
+  height: auto !important;
+}
+
+.social-icons {
+  width: auto;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  display: inline-flex;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons li a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: 0.5s;
+}
+
+.social-icons li a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons li a .fa {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size: 24px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.social-icons li:nth-child(1) a:hover .fa {
+  color: #3b5998;
+}
+
+.social-icons li:nth-child(2) a:hover .fa {
+  color: #e4405f;
+}
+
+.hours {
+  margin-top: 2rem !important;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4em;
+  margin: 0px;
+}
+
+button input {
+  width: 20% !important;
+  height: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+}

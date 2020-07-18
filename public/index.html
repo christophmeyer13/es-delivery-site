@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES-Delivery</title>
+    <meta name="description" content="ES-ShishaStore Lieferservice. Wir liefern Shisha-Tabak, Kohlen und alles was zum Shisha-Rauchen gehört. Lieferung im Gebiet Marktredwitz un Umgebung.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./Watermark.png">
+    <script src="./index.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_oXFmyn3FTjlcrtbiThka6");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="closed hidden">Derzeit nicht verfügbar...</div>
+    <center class="content">
+        <img src="./Watermark.png" alt="ES-Logo">
+        <div class="hours">Bestellannahme Montag-Freitag von 12Uhr bis 20Uhr</div>
+        <div>Samstag von 12Uhr bis 18Uhr</div>
+        <div class="Liefergebiet">Liefergebiet: Marktredwitz, Brand, Lorenzreuth, Wunsiedel</div>
+        <div class="Liefergebiet">(Ausnahmen nach Absprache möglich)</div><br>
+        <h4 class="_14">Follow us on</h4>
+        <ul class="social-icons">
+            <li><a href="https://de-de.facebook.com/ES.ShishaStore" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/esshishastore.de/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+        <h1>Verfügbare Artikel</h2>
+            <ul class="tabak"></ul>
+            <ul class="gutschein">
+                <li class="sonstiges">Gutschein</li>
+                <li>
+                    <button class="gutschein-btn" type="button" value="1"><input type="number" class="gutschein-wert" step="10" id="#gutschein-wert"><span>€ Gutschein</span></button>
+                </li>
+            </ul>
+            <h1>Bestellung</h1>
+            <ul class="order"></ul>
+            <span class="gesamt-div">Gesamt: <span class="gesamt">0.00€</span></span>
+            <span class="klein">  zzgl. 4€ Liefergebühr</span>
+            <div class="klein space">Mindestbestellwert: 20€</div>
+            <div class="form hidden">
+                <div>Name*: </div><input class="name" type="text" required><br>
+                <div>Vollständige Adresse*: </div><textarea class="address" type="text" cols="50" rows="4" required></textarea><br>
+                <div>Telefon*: </div><input class="phone" type="number" required><br>
+                <button type="submit" class="submit">Bestellung aufgeben</button><br>
+                <span class="klein">* benötigte Felder</span>
+            </div>
+            <div><a href="http://es-shishastore.de" target="_blank">AGB, Impressum, Datenschutz auf unserer
+                    Webseite.</a></div>
+    </center>
+
+    <template class="list-item">
+        <li>
+            <button id="#product" type="button" value="1">Text</button>
+        </li>
+    </template>
+    <template class="list-item-order">
+        <li>
+            <span class="product"></span>
+            <span class="price"></span>
+            <button class="delete" type="button" value="-1">Löschen</button>
+        </li>
+    </template>
+</body>
+
+</html>
